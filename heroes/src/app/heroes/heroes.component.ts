@@ -9,13 +9,8 @@ import { HeroService } from '../hero.service';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
-  // hero = {
-  //   id: 1,
-  //   name: 'Windstorm'
-  // };
-  // heroes = HEROES;
   heroes: Hero[];
-  selectedHero: Hero;
+  // selectedHero: Hero;
 
   // heroService 인자를 클래스 프로퍼티로 선언하면서 HeroService 타입의 의존성 객체가 주입되기를 요청
   // 컴포넌트의 생성자는 생성자로 받은 인자를 클래스 프로퍼티로 연결하는 정도로 간단하게 유지하는 것이 좋다
@@ -27,9 +22,9 @@ export class HeroesComponent implements OnInit {
     this.getHeroes();
   }
 
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-  }
+  // onSelect(hero: Hero): void {
+  //   this.selectedHero = hero;
+  // }
 
   getHeroes(): void {
     // subscribe가 서버에서 받은 응답을 콜백 함수로 전달
