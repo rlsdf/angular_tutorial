@@ -8,6 +8,7 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { RankingComponent } from './ranking/ranking.component';
 
 // 애플리케이션 동작에 필요한 메타데이터는 보통 @NgModule 데코레이터에 지정
 @NgModule({
@@ -16,7 +17,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HeroesComponent,
     HeroDetailComponent,
     MessagesComponent,
-    DashboardComponent
+    DashboardComponent,
+    RankingComponent
   ],
   imports: [ // 이 배열에는 애플리케이션이 동작할 때 필요한 외부 모듈을 등록
     BrowserModule,

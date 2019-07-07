@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
+import { RankingComponent } from '../ranking/ranking.component';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,6 +10,7 @@ import { HeroService } from '../hero.service';
 })
 export class DashboardComponent implements OnInit {
   heroes: Hero[] = [];
+  rank = true;
 
   constructor(private heroService: HeroService) { }
 
